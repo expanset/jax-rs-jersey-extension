@@ -16,7 +16,7 @@
 		
 	<packaging>pom</packaging>
 	
-	<name>Jersey features</name>
+	<name>Jersey features</name> 
 	<description>Jersey features</description>
 	<url>https://expanset.com</url>	
 
