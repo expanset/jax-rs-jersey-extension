@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<prerequisites>
+		<maven>3.2.1</maven>
+	</prerequisites>
+	
+	<parent> 
+		<groupId>com.expanset.jersey</groupId>
+		<artifactId>jersey</artifactId>
+		<version>1.0.2-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	
+	<artifactId>jersey-validation</artifactId>
+		
+	<packaging>jar</packaging>
+	 
+	<name>Jersey validation feature</name>
+	<description>Jersey feature for validating user input based on Hibernate validator</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.expanset.hk2</groupId>
+			<artifactId>hk2-contrib</artifactId>
+			<version>${project.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>com.expanset.utils</groupId>
+			<artifactId>utils-jackson</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+			
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+		</dependency>	
+		<dependency>
+			<groupId>org.glassfish.jersey.ext</groupId>
+			<artifactId>jersey-bean-validation</artifactId>
+		</dependency> 			
+	</dependencies>
+		
+</project>

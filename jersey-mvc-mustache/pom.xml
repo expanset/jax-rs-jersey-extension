@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<prerequisites>
+		<maven>3.2.1</maven>
+	</prerequisites>
+	
+	<parent> 
+		<groupId>com.expanset.jersey</groupId>
+		<artifactId>jersey</artifactId>
+		<version>1.0.2-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	
+	<artifactId>jersey-mvc-mustache</artifactId>
+		
+	<packaging>jar</packaging>
+	
+	<name>Mustache MVC feature</name>
+	<description>Feature for serving Mustache web pages</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.expanset.jersey</groupId>
+			<artifactId>jersey-contrib</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.expanset.jersey</groupId>
+			<artifactId>jersey-mvc</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.spullara.mustache.java</groupId>
+			<artifactId>compiler</artifactId>
+		</dependency>		
+	</dependencies>
+
+</project>
