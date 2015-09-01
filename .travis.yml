@@ -2,6 +2,9 @@ sudo: false
 language: java
 jdk:
 - oraclejdk8
+after_success:
+- if [[ "$TRAVIS_PULL_REQUEST" = "false" ]]; then mvn deploy --settings deploy-settings.xml;
+  else echo 'Pull request, skipping deploy.'; fi
 env:
   global:
   - secure: tDX58h/QAqAvcervvAmf6XFlV6/Q96oQc5e8ncVM6uX6F16HH2fWyTAy5IV39zHKsXUBQmdxtI+zBXygcFOCyrupa/O+0k5LysV7OWKZG/RlyTQTKCQCUnNeIkpwBeh5VLDakSUi0AQ6AhqEvhswpQja5itq66ISm2vPbGMH4DEPUsgWgqN+c6hXrtj6YizagNw3pGVbkFzuFiTQA9ypzdYjBQdKp9QACgfQ/lvKoqX911vTM5VkNF77HAxa4k6psX2ybGC7MtroRv5aF9U0mUJgZ82HwKvhzMFRX20x2k76RKr+io2Htt8/+LdyfenxLX31Y18OxG/O1bev/6sVD9IHmUkthM2ALwAV3TDO+0v/G1t/hUvUVDO6a8nBUU0Z10XWFnJbkyyaEjxse7uv5ke0s4xbfdlLUGMxRFYXV9ABPl6ZVDn88AtrXh+ZrTELlEoe5ltFOLMWT/cY1NZ/I0W7KIzEgvZ/dSdxZJMIoh4mcvluzbxgCUSKfCKrBeRGVS73m/MzmlZkaaRiVoRpqAAZlsHr4vG5RJYAYsQ3cJ5r2GvPzEXFoNKkIMZqwqsAxuDFPRV35NZvzxQNsoTNMgrWAgXphZZitWDYRPPhbTXAlems7MPek8azdsckUDFWw1zueED3rLBo1MYw9jzkqaQ3ddAWdvAewNq8SuoUGow=
