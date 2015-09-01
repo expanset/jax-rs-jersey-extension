@@ -15,8 +15,8 @@
 		
 	<packaging>jar</packaging>
 	 
-	<name>Jersey validation feature</name>
-	<description>Jersey feature for validating user input based on Hibernate validator</description>
+	<name>JAX-RS Jersey validation feature</name>
+	<description>JAX-RS Jersey feature for validating user input based on Hibernate validator</description>
 
 	<dependencies>
 		<dependency>

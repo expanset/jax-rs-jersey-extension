@@ -16,8 +16,8 @@
 		
 	<packaging>pom</packaging>
 	
-	<name>Jersey features</name> 
-	<description>Jersey features</description>
+	<name>JAX-RS Jersey features</name> 
+	<description>JAX-RS Jersey features</description>
 	<url>https://expanset.com</url>	
 
 	<scm>
@@ -90,5 +90,9 @@
 			</dependency>		        	
 		</dependencies>
 	</dependencyManagement>
+
+	<build>
+		<finalName>expanset-${project.artifactId}-${project.version}</finalName>
+	</build>	
 	
 </project>

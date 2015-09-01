@@ -15,7 +15,7 @@
 		
 	<packaging>jar</packaging>
 	
-	<name>Jersey contribution library</name>
+	<name>JAX-RS Jersey contribution library</name>
 	<description>Features for static handling, securing etc</description>
 	
 	<dependencies>

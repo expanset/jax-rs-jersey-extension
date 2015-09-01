@@ -15,8 +15,8 @@
 		
 	<packaging>jar</packaging>
 	
-	<name>Jersey persistence</name>
-	<description>Jersey features for entity persistence</description>
+	<name>JAX-RS Jersey persistence</name>
+	<description>JAX-RS Jersey features for entity persistence</description>
 	
 	<dependencies>
 		<dependency>

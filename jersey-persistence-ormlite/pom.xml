@@ -15,8 +15,8 @@
 		
 	<packaging>jar</packaging>
 	
-	<name>Jersey Ormlite persistence</name>
-	<description>Jersey features for entity persistence based on Ormlite</description>
+	<name>JAX-RS Jersey Ormlite persistence</name>
+	<description>JAX-RS Jersey features for entity persistence based on Ormlite</description>
 	
 	<dependencies>
 		<dependency>

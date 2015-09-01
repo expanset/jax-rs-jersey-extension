@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import javax.annotation.Nonnull;
 import javax.ws.rs.core.Application;
 
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang3.Validate;
 import org.eclipse.jetty.server.session.HashSessionIdManager;
 import org.eclipse.jetty.server.session.HashSessionManager;
 import org.eclipse.jetty.xml.XmlConfiguration;
